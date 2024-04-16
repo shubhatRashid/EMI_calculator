@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Input = () => {
+const Input = ({state,setState}) => {
   return (
     <div style={inputStyle}>
-      <input style={inputStyle}/>
+      <input style={inputStyle} value={state} onChange={(e) => setState(e.target.value)}/>
     </div>
   )
 }
